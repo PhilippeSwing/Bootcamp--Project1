@@ -52,8 +52,8 @@ h5 {
 
 }
 
-blockquote,
 p {
+    color:rgb(153, 153, 153);
     
 }
 /* ==Topographic Ends== */
@@ -186,7 +186,7 @@ p {
 /* ====About Us Director Statement Section==== */
 .aboutUsDirector {
     background-color: rgb(237, 237, 237);
-    padding-top: 225px;
+    padding: 225px 0 290px 0;
     /* position: relative; */
     /* padding-right: 126px; */
 }
@@ -204,14 +204,21 @@ p {
 }
 
 .aboutUsImageContainer {
-    width: auto;
+    width: 40%;
     float: left;
     border: 15px solid rgb(255, 255, 255);
 }
 
+.aboutUsImageContainer img {
+    width: 100%;
+    display: block;
+}
+
 .aboutUsTextContainer {
-    width: 50%;
+    width: calc(60% - 130px);
     float: right;
+    margin: 0 65px;
+    position: relative;
 }
 
 .aboutUsTextContainer h2 {
@@ -220,16 +227,29 @@ p {
     line-height: 62px;
 }
 
+.aboutUsTextContainer h2::before {
+    content: "";
+    height: 2px;
+    width: 66px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 .aboutUsTextContainer blockquote {
     margin: 0;
+    color: rgb(153, 153, 153);
+    line-height: 30px;
 }
 
 .aboutUsTextContainer .aboutUsDirectorSignature strong {
-
+    color: rgb(0, 0, 0);
+    font-weight: 600;
 }
 
 .aboutUsTextContainer .aboutUsDirectorSignature em {
-    
+    font-style: normal;
 }
 
 .aboutUsLogo {
@@ -237,7 +257,10 @@ p {
     bottom: -135px;
     left: -3px;
     /* transform: translate(-53%, -48%); */
-    
+}
+
+.aboutUsDirectorSignature {
+    margin: 35px 0 0 0;
 }
 /* ====About Us Director Statement Section ENDS==== */
 
