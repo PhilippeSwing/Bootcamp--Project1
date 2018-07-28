@@ -67,11 +67,12 @@ p {
 .wrapperSecondary {
     max-width: 1170px;
     margin: 0 auto;
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
 }
 
 .wrapperThird {
     max-width: calc(1920px - ((1920px - 1170px) / 2));
+    border: 1px solid red;
 }
 /* ==wrappers ENDS== */
 
@@ -265,7 +266,80 @@ p {
 /* ====About Us Director Statement Section ENDS==== */
 
 /* ====About Us Features==== */
+.aboutUsFeatures .wrapperThird {
+    float: right;
+    /* display: inline-block; */
+    /* text-align: right; */
+}
 
+.featuresTextContainer {
+    width: calc(55% - 10px);
+    float: left;
+    margin-right: 10px;
+    /* padding-left: 50px; */
+}
+
+.featuresTextContainer h4 {
+    color: rgb(0, 0, 0);
+    letter-spacing: 1px;
+    text-align: left;
+}
+
+.featuresTextContainer p {
+    line-height: 25px;
+    text-align: left;
+    margin-top: 15px;
+}
+
+.featureContainer {
+    padding: 0 75px 0 60px;
+    margin-bottom: 40px;
+    width: 50%;
+    float: left;
+    position: relative;
+}
+
+.featureContainer::before {
+    position: absolute;
+    left: 0;
+    top: -10px;
+}
+
+.feature1::before {
+    content: url('../assets/feature-01.png');
+}
+
+.feature2::before {
+    content: url('../assets/feature-02.png');
+}
+
+.feature3::before {
+    content: url('../assets/feature-03.png');
+}
+
+.feature4::before {
+    content: url('../assets/feature-04.png');
+}
+
+.feature5::before {
+    content: url('../assets/feature-05.png');
+}
+
+.feature6::before {
+    content: url('../assets/feature-06.png');
+6
+
+.featuresImageSection {
+    float: right;
+    width: 45%;
+    border: 1px solid blue;
+    /* background-image: url('../assets/home-3.jpeg'); */
+}
+
+.featuresImageSection img {
+    width: 100%;
+    display: block;
+}
 /* ====About Us Features ENDS==== */
 /* ==About Us Section ENDS== */
 
