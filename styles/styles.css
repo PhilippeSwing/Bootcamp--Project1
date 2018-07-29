@@ -22,7 +22,9 @@ body {
 /* ==Topographic== */
 h1,
 h2,
-h3 {
+h3, 
+h4,
+h5 {
     font-family: 'Playfair Display', serif;
 }
 
@@ -41,6 +43,16 @@ h3 {
 }
 
 h4 {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+h5 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+h6 {
     font-size: 1.4rem;
     font-weight: 600;
     color: rgb(153, 153, 153);
@@ -48,10 +60,6 @@ h4 {
     text-align: center;
     letter-spacing: 8px;
     margin: 0;
-}
-
-h5 {
-
 }
 
 p {
@@ -76,6 +84,16 @@ p {
     border: 1px solid red;
 }
 /* ==wrappers ENDS== */
+
+/* ==Social Media Links== */
+.socialNav li {
+    display: inline-block;
+}
+
+.socialNav i {
+    font-size: 1.6rem;
+}
+/* ==Social Media Links ENDS== */
 
 /* ==Site Top Header== */
 .headerNavContainer {
@@ -165,24 +183,143 @@ p {
 /* ==Site Header Hero ENDS== */
 
 /* ==Site Footer== */
+/* ====Footer Top==== */
+footer .wrapperPrimary {
+    background-color: rgb(33, 32, 32);
+    color: rgb(153, 153, 153);
+    padding-top: 80px;
+}
 
+footer a {
+    color: rgb(153, 153, 153);
+    text-decoration: none;
+}
+
+footer ul {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+footer li {
+    margin-bottom: 10px;
+}
+
+.footerTop {
+    padding-bottom: 60px;
+}
+
+.footerTopLinks1, 
+.footerTopLinks2 {
+    width: 30%;
+}
+
+.emailForm {
+    width: 40%;
+    position: relative;
+}
+
+.emailFormLabel {
+    display: block;
+}
+
+.emailFormInput {
+    color: rgb(204, 204, 204);
+    font-weight: 300;
+    background-color: rgb(33, 32, 32);
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.25);
+    display: inline-block;
+    padding-bottom: 15px;
+    margin-top: 30px;
+    width: 100%;
+    /* background-image: url('../assets/paper-plane-solid.svg'); */
+    /* background: rgb(33, 32, 32) url('../assets/paper-plane-regular.svg') right no-repeat; */
+    /* background-size: 1.7rem; */
+}
+
+/* .emailFormSubmit {
+    background: rgb(33, 32, 32) url('../assets/paper-plane-regular.svg') right no-repeat;
+    border: none;
+    position: absolute;
+    bottom: 15px;
+    right: 0px;
+} */
+
+.emailForm .fa-paper-plane {
+    background-color: rgb(33, 32, 32);
+    position: absolute;
+    bottom: 15px;
+    right: 0px;
+    color: rgb(204, 204, 204);
+    font-size: 1.7rem;
+}
+
+.footerTopLinks1, 
+.footerTopLinks2,
+.emailForm {
+    float: left;
+}
+/* ====Footer Bottom==== */
+.footerBottom {
+    clear: both;
+    /* background-color: transparent; */
+    padding: 45px 0 30px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.copyright {
+    float: left;
+    margin: 0;
+}
+
+.copyright a {
+    color: rgb(102, 102, 102);
+}
+
+.footerSocialNav {
+    float: right;
+}
+
+.footerSocialNav li {
+    margin-left: 50px;
+}
+
+.footerSocialNav i {
+    color: rgb(255, 255, 255);
+}
+/* ====Footer Bottom ENDS==== */
 /* ==Site Footer ENDS== */
 /* GENERAL STYLES ENDS */
 /* ======================== */
 
 /* ======================== */
-/* HOME HEADER STYLES */
+/* HEADER STYLES */
 /* ==Home Hero== */
 .heroHome {
     background-image: url('../assets/home-1.jpeg');
     min-height: 840px;
 }
 /* ==Home Hero ENDS== */
-/* HOME HEADER STYLES ENDS */
+
+/* ==Blog Hero== */
+.heroBlog {
+    background-image: url('../assets/blog-1.jpeg');
+    min-height: 891px;
+}
+/* ==Blog Hero ENDS== */
+
+/* ==Contact Hero== */
+.heroContact {
+    background-image: url('../assets/contact-1.jpeg');
+    min-height: 549px;
+}
+/* ==Contact Hero ENDs== */
+/* HEADER STYLES ENDS */
 /* ======================== */
 
 /* ======================== */
-/* MAIN STARTS */
+/* HOME MAIN STARTS */
 
 /* ==About Us Section== */
 /* ====About Us Director Statement Section==== */
@@ -288,7 +425,7 @@ p {
     /* padding-left: 50px; */
 }
 
-.featuresTextContainer h4 {
+.featuresTextContainer h6 {
     color: rgb(0, 0, 0);
     letter-spacing: 1px;
     text-align: left;
@@ -540,24 +677,211 @@ p {
     margin: 20px 0 0 0;
 }
 /* <!-- ==Information Section ENDS== --> */
-textarea {
-    resize: none;
+
+/* HOME MAIN ENDS */
+/* ======================== */
+
+/* ======================== */
+/* BLOG MAIN */
+
+/* ==Blog General Styles== */
+h6.blogCategories {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    text-transform: capitalize;
+    text-align: left;
+    letter-spacing: normal;
+    margin: 0;
+}
+/* ==Blog General Styles Ends== */
+
+/* ==Blog Main Section Wrappers== */
+.blogMainPrimaryWrapper {
+    background-color: rgb(238, 238, 238);
 }
 
-	/* This is to apply positioning for all list items
-		li::before {
-			position: absolute;
-			top: 10px;
-			right: 10px;
-		}
-		
-		This is to insert a unique icon for each list item
-		li:nth-chile(1)::before {
-				content: "[insert icon here]";
-        } */
-        
-/* MAIN ENDS */
+.blogMainSecondaryWrapper {
+    background-color: rgb(255, 255, 255);
+    padding: 0 50px;
+    position: relative;
+    bottom: 80px;
+}
+/* ==Blog Main Section Wrappers ENDS== */
+
+/* ==Blog Section Header== */
+.sectionSubHeader, 
+.blogSectionHeaderNav {
+    text-align: center;
+}
+
+.blogSectionHeader {
+    padding: 65px 165px;
+}
+
+.blogSectionHeader h4 {
+    margin: 0;
+}
+
+.blogSectionHeaderNav {
+    margin-top: 50px;
+}
+
+.blogSectionHeaderNav ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.blogSectionHeaderNav li {
+    display: inline-block;
+    margin: 0 2px;
+}
+
+.blogSectionHeaderNav li a {
+    text-decoration: none;
+    color: rgb(153, 153, 153);
+}
+
+.blogSectionHeaderNavList li:nth-child(3) a {
+    color: rgb(0, 0, 0);
+}
+
+.blogSectionHeaderNav li a:hover {
+    color: rgb(0, 0, 0);
+}
+
+.blogSectionHeaderNavList li:nth-child(n + 2)::before {
+    content: ">";
+    color: rgb(153, 153, 153);
+}
+
+.blogSectionHeaderNavList li:nth-child(n + 2) a {
+    margin-left: 2px;
+}
+/* ==Blog Section Header ENDS== */
+
+/* ==Blog Post Section== */
+/* ====Author Information==== */
+.blogAuthorInformation {
+    border-bottom: 0.42px solid rgba(0, 0, 0, 0.15);
+    padding-bottom: 22px;
+}
+
+.blogAuthorImageContainer {
+    float: left;
+    /* width: 15% */
+}
+
+.blogAuthorImageContainer img {
+    width: 100%;
+    display: block;
+    border-radius: 50%;
+}
+
+.blogAuthorInformationList {
+    float: left;
+    width: 90%;
+    padding-left: 30px;
+}
+
+.blogAuthorInformationList li {
+    display: inline-block;
+    width: 18%;
+}
+
+.blogAuthorInformationList li:first-child {
+    width: 44%;
+}
+
+.blogAuthorInformationList h6 {
+    margin: 5px 0 9px 0;
+}
+
+.blogAuthorInformationList p {
+    margin: 0;
+}
+
+.blogAuthorInformationList strong {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: rgb(0, 0, 0);
+}
+/* ====Author Information ENDS==== */
+
+/* ====Blog Article==== */
+.blogPostContent {
+    margin-top: 50px;
+}
+
+.blogPostContent em {
+    font-style: normal;
+    color: rgb(0, 0, 0);
+}
+
+.blogPostContent p {
+    margin: 0 0 27px 0;
+    line-height: 22px;
+}
+/* ====Blog Article ENDS==== */
+
+/* ====Blog Social Media==== */
+.blogPostSocialNavContainer {
+    margin-top: 60px;
+}
+
+.blogPostSocialNavContainer h6,
+.blogPostSocialNavContainer nav {
+    float: left;
+}
+
+.blogPostSocialNav {
+
+}
+
+.blogPostSocialNav ul {
+    padding-left: 18px;
+    margin: 0;
+}
+
+.blogPostSocialNav ul li {
+    margin-right: 10px;
+}
+
+.blogPostSocialNav li a {
+
+}
+
+.blogPostSocialNav a i {
+    color: rgb(213, 213, 213);
+}
+
+.blogPostSocialNav a:hover i {
+    color: rgb(0, 204, 255);
+}
+/* ====Blog Social Media ENDS==== */
+/* ==Blog Post Section ENDS== */
+
+/* ==Related Posts Section== */
+.relatedPostsHeaderContainer {
+    border-bottom: 0.42px solid rgba(0, 0, 0, 0.15);
+}
+
+.relatedPostsHeaderContainer h5 {
+    margin: 100px 0 22px 0;
+}
+
+/* ==Related Posts Section ENDS== */
+
+textarea {
+    resize: none;
+    width: 100%;
+}
+/* BLOG MAIN ENDS */
 /* ======================== */
+
+
 
 /* ======================== */
 /* FOOTER STARTS */
