@@ -87,7 +87,7 @@
 
                             <div class="aboutUsTextContainer">
                                 <!-- SOMETHING HERE FOR THE LITTLE PARTIAL BORDER-TOP LINE IF H2:before DOESN'T WORK. use :before css selector like in Ryan's video -->
-                                <h2 class="aboutUsTextHeader sectionSubHeader">A great place to enjoy your life</h2>
+                                <h3 class="aboutUsTextHeader">A great place to enjoy your life</h3>
 
                                 <blockquote class="aboutUsTextBody">Design cute expidition, excursion fun modern website clean website travelling travelblogger
                                     travelling theme. Travel fun simple design, simple fun design darn wanderlust wanderlust
@@ -156,28 +156,41 @@
         </section>
         <!-- ==About Us Section ENDS== -->
 
-        <div class="testimonialGalleryBackground">
+        <div class="testimonialGalleryBackground wrapperPrimary">
             <!-- ==Testimonials Section== -->
             <section class="testimonials wrapperPrimary">
                 <div class="testimonialsContainer wrapperSecondary">
+                    <a href="#" class="testimonialsScrollArrow">
+                        <i class="fas fa-angle-left"></i>
+                    </a>
+
                     <header class="sectionHeader">
                         <h4 class="testimonialsHeader">Testimonial</h4>
                     </header>
 
                     <h2 class="testimonialsTextHeader sectionSubHeader">What Clients Say</h2>
                     <!-- ARE THESE QUOTES DIFFERENT THAN DEFAULT TEXT EDITOR? I MIGHT NEED BEFORE AND AFTER TO ADD IMAGES -->
-                    <blockquote>"Fun adventure colorful traveling Travel traveler fun, traveling cute expedition simple..."</blockquote>
+                    <blockquote>"Fun adventure colorful traveling Travel traveler fun, traveling cute expedition simple traveling. Organized
+                        traveler colorful whimsical simple, design clean design expedition travelblogger. Simple whimsical
+                        expedition design organized."</blockquote>
 
                     <div class="starsRatingContainer">
-                        <img src="" alt="Customer's star rating.">
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
                     </div>
 
                     <p class="aboutUsResortDirector quoteUser">
-                        <strong>Adam Levine</strong>
-                        <em> - Review from
-                            <span>TripAdvisor</span>
-                        </em>
+                        <strong>Adam Levine </strong>- Review from
+                        <strong>TripAdvisor</strong>
+
                     </p>
+
+                    <a href="#" class="testimonialsScrollArrow">
+                        <i class="fas fa-angle-right"></i>
+                    </a>
                 </div>
             </section>
             <!-- ==Testimonials Section ENDS== -->
@@ -191,23 +204,23 @@
 
                     <h2 class="exploreGalleryTextHeader sectionSubHeader">Gallery</h2>
 
-                    <div class="galleryImagesContainer">
-                        <div class="galleryImage image1">
+                    <div class="galleryImagesContainer clearfix">
+                        <div class="galleryImageContainer image1">
                             <img src="./assets/home-4.jpeg" alt="Thick light and dark striped tropical leaves.">
                         </div>
-                        <div class="galleryImage image2">
+                        <div class="galleryImageContainer image2">
                             <img src="./assets/home-5.jpeg" alt="Topographical view of a woman floating on a blue translucent body of water, wearing a bikini.">
                         </div>
-                        <div class="galleryImage image3">
+                        <div class="galleryImageContainer image3">
                             <img src="./assets/home-6.jpeg" alt="">
                         </div>
-                        <div class="galleryImage image4">
+                        <div class="galleryImageContainer image4">
                             <img src="./assets/home-7.jpeg" alt="">
                         </div>
-                        <div class="galleryImage image5">
+                        <div class="galleryImageContainer image5">
                             <img src="./assets/home-8.jpeg" alt="">
                         </div>
-                        <div class="galleryImage image6">
+                        <div class="galleryImageContainer image6">
                             <img src="./assets/home-9.jpeg" alt="">
                         </div>
                     </div>
@@ -216,11 +229,11 @@
             <!-- ==Explore Gallery Section ENDS== -->
         </div>
         <!-- ==Information Section== -->
-        <section class="information wrapperPrimary">
-            <div class="wrapperThird">
+        <section class="information wrapperPrimary clearfix">
+            <div class="wrapperThird clearfix">
                 <div class="informationImageContainer">
-                    <!-- <img src="./assets/home-10.jpeg" alt="Topographical view of a beautiful sandy beach with people on surf boards, in canoes, and palm trees."
-                        class="informationImage"> -->
+                    <img src="./assets/home-10.jpeg" alt="Topographical view of a beautiful sandy beach with people on surf boards, in canoes, and palm trees."
+                        class="informationImage">
                 </div>
 
                 <div class="informationTextContainer">
@@ -231,9 +244,7 @@
                     <h2 class="informationTextHeader sectionSubHeader">Contact Us</h2>
 
                     <p class="informationLocation">
-                        <strong>Honolulu, </strong>
-                        <em>Hawaii</em>
-                    </p>
+                        <strong>Honolulu, </strong>Hawaii</p>
 
                     <address class="address">
                         <p class="addressLocation">123 King Str, 4th Floor, Utral Hosue Building, Honolulu, Hawaii.</p>
@@ -246,8 +257,7 @@
                         <div class="phoneNumber">
                             <p class="phoneNumberText">Call directly:</p>
 
-                            <p class="phoneNumberNumber">
-                                <span>+</span>99 (0) 344 956 4050</p>
+                            <p class="phoneNumberNumber">+99 (0) 344 956 4050</p>
                         </div>
                     </address>
                 </div>
