@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contact</title>
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700|Poppins:300,400,600" rel="stylesheet">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.0.10/css/all.css' integrity='sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg'
+        crossorigin='anonymous'>
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 
@@ -70,30 +72,32 @@
         <!-- ==Contact Details Section== -->
         <section class="contactDetails wrapperPrimary">
             <div class="wrapperSecondary">
-                <h2 class="sectionSubHeader">Contact details</h2>
+                <h3 class="contactHeader">Contact details</h3>
 
-                <p class="contactDetailsDescription">Design cute expedition, excursion fun modern website clean website traveling travelblogger traveling theme.
-                    Travel fun simple design, simple fun design.</p>
+                <div class="contactDetailsDescriptionContainer">
+                    <p class="contactDetailsDescription">Design cute expedition, excursion fun modern website clean website traveling travelblogger traveling
+                        theme. Travel fun simple design, simple fun design.</p>
+                </div>
 
-                <ul class="contactOptionsContainer">
-                    <li>
-                        <i></i>
-                        <h4>Phone</h4>
+                <div class="contactOptionsContainer clearfix">
+                    <div class="contactOption option1">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h6>Phone</h6>
                         <p>Phone 01: (0091) 8547 632521</p>
                         <p>Phone 02: (084) 965 4788</p>
-                    </li>
-                    <li>
-                        <i></i>
-                        <h4>Address</h4>
+                    </div>
+                    <div class="contactOption option2">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h6>Address</h6>
                         <p>123 King Str, 4th Floor, Utral Hosue Building, Honolulu, Hawaii.</p>
-                    </li>
-                    <li>
-                        <i></i>
-                        <h4>Email</h4>
+                    </div>
+                    <div class="contactOption option3">
+                        <i class="fas fa-envelope"></i>
+                        <h6>Email</h6>
                         <p>support@sunshine.com</p>
                         <p>hello@sunshine.com</p>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- ==Contact Details Section ENDS== -->
@@ -101,18 +105,23 @@
         <!-- ==Contact Form Section== -->
         <section class="contactFormContainer wrapperPrimary">
             <div class="wrapperSecondary">
-                <h2 class="sectionSubHeader">Get in touch with us</h2>
+                <h3 class="contactHeader">Get in touch with us</h3>
 
                 <p class="contactDetailsDescription">Traveling travelblogger traveling theme. Travel fun simple design, simple fun.</p>
 
-                <form action="" class="contactSubmitForm siteSubmitForm">
+                <form action="sendInquiry.php" class="contactSubmitForm siteSubmitForm" name="inquiryForm" method="POST">
                     <div class="userInfo">
-                        <input type="text" placeholder="Enter your name..." required>
-                        <input type="email" placeholder="youremail@domain.com" required>
-                        <input type="text" placeholder="Subject(Optional)">
+                        <label for="userName" class="visuallyhidden">Please enter your name</label>
+                        <input type="text" placeholder="Enter your name..." id="userName" name="userName" required>
+                        <label for="userEmail" class="visuallyhidden">Please enter your email</label>
+                        <input type="email" placeholder="youremail@domain.com" id="userEmail" name="userEmail" required>
+                        <label for="userSubject" class="visuallyhidden">Please enter your subject</label>
+                        <input type="text" id="userSubject" name="userSubject" placeholder="Subject(Optional)">
                     </div>
 
-                    <textarea name="commentText" id="" cols="200" rows="10" wrap="hard" placeholder="Here goes your message" required></textarea>
+                    <label for="inquiryText" class="visuallyhidden">Please enter your iquiry message here</label>
+                    <textarea name="inquiryText" id="inquiryText" cols="200" rows="10" wrap="hard" placeholder="Here goes your message" maxlength="1000"
+                        required></textarea>
 
                     <input type="submit" value="Send Message">
                 </form>
@@ -126,7 +135,91 @@
     <!-- ======================== -->
     <!-- FOOTER STARTS-->
     <footer>
+
         <div class="footerHero wrapperPrimary"></div>
+
+        <div class="wrapperPrimary">
+            <!-- ==Footer Top== -->
+            <section class="footerTop wrapperSecondary clearfix">
+                <nav class="footerTopLinks1 footerTopLinks clearfix">
+                    <ul>
+                        <li>
+                            <a href="#">Site Map</a>
+                        </li>
+                        <li>
+                            <a href="#">Terms & Conditions</a>
+                        </li>
+                        <li>
+                            <a href="#">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="#">Help</a>
+                        </li>
+                        <li>
+                            <a href="#">Affiliate</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <nav class="footerTopLinks2 footerTopLinks">
+                    <ul>
+                        <li>
+                            <a href="#">FAQs</a>
+                        </li>
+                        <li>
+                            <a href="blog.html">Blog</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Location</a>
+                        </li>
+                        <li>
+                            <a href="#">Press</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <form action="sendEmail.php" class="emailForm">
+                    <label for="emailForm" class="emailFormLabel">sign up for get our newsletter</label>
+                    <input type="email" class="emailFormInput" id="emailForm" name="emailForm" placeholder="Your email...">
+
+                    <button type="submit" class="emailFormSubmit">
+                        <i class="far fa-paper-plane"></i>
+                    </button>
+                    <!-- <a href="#">
+                                <i class="far fa-paper-plane"></i>
+                            </a> -->
+                </form>
+            </section>
+            <!-- ==Footer Top ENDS== -->
+
+            <!-- ==Footer Bottom== -->
+            <section class="footerBottom wrapperSecondary clearfix">
+                <p class="copyright">
+                    <a href="#">&copy; 2018 Sunshine Hotel</a>
+                </p>
+
+                <nav class="footerSocialNav socialNav">
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com">
+                                <i title="Take me to the Facebook page" class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.twitter.com">
+                                <i title="Take me to the twitter page." class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com">
+                                <i title="Take me to the Instagram page" class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+            <!-- ==Footer Bottom ENDS== -->
+        </div>
 
     </footer>
     <!-- FOOTER ENDS -->

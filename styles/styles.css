@@ -64,6 +64,7 @@ h6 {
 
 p {
     color:rgb(153, 153, 153);
+    font-size: 1.4rem;
 }
 /* ==Topographic Ends== */
 
@@ -219,6 +220,19 @@ footer li {
     position: relative;
 }
 
+.visuallyhidden:not(:focus):not(:active) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .emailFormLabel {
     display: block;
 }
@@ -238,19 +252,16 @@ footer li {
     /* background-size: 1.7rem; */
 }
 
-/* .emailFormSubmit {
-    background: rgb(33, 32, 32) url('../assets/paper-plane-regular.svg') right no-repeat;
-    border: none;
+.emailFormSubmit {
+    background: rgb(33, 32, 32);
     position: absolute;
     bottom: 15px;
     right: 0px;
-} */
+    border: none;
+    cursor: pointer;
+}
 
 .emailForm .fa-paper-plane {
-    background-color: rgb(33, 32, 32);
-    position: absolute;
-    bottom: 15px;
-    right: 0px;
     color: rgb(204, 204, 204);
     font-size: 1.7rem;
 }
@@ -259,6 +270,17 @@ footer li {
 .footerTopLinks2,
 .emailForm {
     float: left;
+}
+
+.footerTop a:hover,
+.copyright a:hover,
+.emailForm button:hover .fa-paper-plane,
+.emailForm input[type="email"]:hover {
+    color: rgb(255, 255, 255);
+}
+
+.emailForm input[type="email"]:hover {
+    border-bottom: 2px solid rgb(153, 153, 153);
 }
 /* ====Footer Bottom==== */
 .footerBottom {
@@ -408,6 +430,14 @@ footer li {
     box-shadow: 2px 4px 100px 0px rgba(0, 0, 0, 0.1);
 }
 
+.aboutUsFeatures {
+    box-shadow: 2px 4px 100px 0px rgba(0, 0, 0, 0.1);
+    position: relative;
+    /* -webkit-box-shadow: 0px 14px 10px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 14px 10px -6px rgba(0,0,0,0.75);
+    box-shadow: 0px 14px 10px -6px rgba(0,0,0,0.75); */
+}
+
 .aboutUsFeatures .wrapperThird {
     float: right;
     margin-left: 19.5%;
@@ -419,10 +449,9 @@ footer li {
 .featuresTextContainer {
     width: calc(55% - 50px);
     margin-right: 50px;
+    /* width: 55%; */
     float: left;
     padding: 175px 0 90px 0;
-    /* margin-right: 10px; */
-    /* padding-left: 50px; */
 }
 
 .featuresTextContainer h6 {
@@ -440,7 +469,7 @@ footer li {
 .featureContainer {
     padding: 0 75px 0 60px;
     margin-bottom: 40px;
-    width: 50%;
+    width: 49%;
     float: left;
     position: relative;
 }
@@ -476,7 +505,7 @@ footer li {
 }
 
 .featuresImageSection {
-    float: right;
+    float: left;
     width: 45%;
     /* border: 1px solid blue; */
 }
@@ -493,6 +522,7 @@ footer li {
     background: rgb(237, 237, 237) url('../assets/pattern.png') center no-repeat;
     background-size: cover;
     padding: 170px 0;
+
 }
 
 .testimonialsContainer {
@@ -689,7 +719,8 @@ footer li {
     max-width: 1270px;
 }
 
-h6.blogCategories {
+h6.blogCategories,
+.contactOption h6 {
     font-family: 'Playfair Display', serif;
     font-weight: 700;
     color: rgb(0, 0, 0);
@@ -826,6 +857,7 @@ h6.blogCategories {
 .blogPostContent p {
     margin: 0 0 27px 0;
     line-height: 22px;
+    font-size: 1.5rem
 }
 /* ====Blog Article ENDS==== */
 
@@ -839,9 +871,9 @@ h6.blogCategories {
     float: left;
 }
 
-.blogPostSocialNav {
+/* .blogPostSocialNav {
 
-}
+} */
 
 .blogPostSocialNav ul {
     padding-left: 18px;
@@ -852,9 +884,9 @@ h6.blogCategories {
     margin-right: 10px;
 }
 
-.blogPostSocialNav li a {
+/* .blogPostSocialNav li a {
 
-}
+} */
 
 .blogPostSocialNav a i {
     color: rgb(213, 213, 213);
@@ -962,7 +994,6 @@ h6.blogCategories {
 }
 
 .commentsHistoryImageContainer {
-    /* display: inline-block; */
     float: left;
     width: 6%;
 }
@@ -1011,7 +1042,7 @@ h6.blogCategories {
 .commentText {
     margin: 12px 0 0 0;
     color: rgb(102, 102, 102);
-    font-size: 1.3rem;
+    /* font-size: 1.3rem; */
 }
 
 .postDate {
@@ -1040,6 +1071,7 @@ h6.blogCategories {
     border-bottom: 0.42px solid rgba(0, 0, 0, 0.15);
     padding-bottom: 10px;
     color: rgb(153, 153, 153);
+    font-size: 1.4rem;
 }
 
 .siteSubmitForm input[type="text"]:hover,
@@ -1097,6 +1129,77 @@ h6.blogCategories {
 /* ======================== */
 /* CONTACT MAIN */
 
+/* ==Contact Details Section== */
+.contactDetails {
+    padding-top: 140px;
+}
+
+.contactHeader {
+    text-align: left;
+    margin: 0;
+}
+
+.contactDetailsDescriptionContainer {
+    width: 60%;
+}
+
+.contactDetailsDescription {
+    line-height: 27px;
+    margin: 23px 0 0 0;
+}
+
+.contactOptionsContainer {
+    margin-top: 50px;
+}
+
+.contactOption {
+    width: 33.3%;
+    padding: 50px 0 50px 75px;
+    border-right: 0.42px solid rgba(0, 0, 0, 0.15);
+    float: left;
+}
+
+.contactOption:last-child {
+    border: none;
+}
+
+.contactOption .fas {
+    font-size: 4rem;
+}
+
+.contactOption h6 {
+    margin: 22px 0 15px 0;
+}
+
+.contactOption p {
+    font-size: 1.5rem;
+    margin: 8px 0 0 0;
+    line-height: 15px;
+}
+
+.contactOption.option2 p {
+    line-height: 24px;
+}
+
+.contactOption.option2 h6 {
+    margin: 22px 0 10px 0;
+}
+/* ==Contact Details Section ENDS== */
+
+
+/* ==Contact Form Section== */
+.contactFormContainer {
+    margin: 40px 0 0 0;
+}
+
+.contactSubmitForm {
+    margin-top: 125px;
+}
+
+.contactSubmitForm input[type="submit"] {
+    
+}
+/* ==Contact Form Section== */
 /* CONTACT MAIN ENDS */
 /* ======================== */
 

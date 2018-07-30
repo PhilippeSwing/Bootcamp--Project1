@@ -306,14 +306,19 @@
                             <h5>Leave A Comment</h5>
                         </div>
 
-                        <form action="" class="commentSubmitForm siteSubmitForm">
+                        <form action="sendComment" class="commentSubmitForm siteSubmitForm" name="inquiryForm" method="POST">
                             <div class="userInfo">
-                                <input type="text" placeholder="Enter your name..." required>
-                                <input type="email" placeholder="youremail@domain.com" required>
-                                <input type="text" placeholder="Subject(Optional)">
+                                <label for="userName" class="visuallyhidden">Please enter your name</label>
+                                <input type="text" placeholder="Enter your name..." id="userName" name="userName" required>
+                                <label for="userEmail" class="visuallyhidden">Please enter your email</label>
+                                <input type="email" placeholder="youremail@domain.com" id="userEmail" name="userEmail" required>
+                                <label for="userSubject" class="visuallyhidden">Please enter your subject</label>
+                                <input type="text" id="userSubject" name="userSubject" placeholder="Subject(Optional)">
                             </div>
 
-                            <textarea name="commentText" id="" cols="200" rows="10" wrap="hard" placeholder="Here goes your comment" required></textarea>
+                            <label for="commentText" class="visuallyhidden">Please enter your comment here</label>
+                            <textarea name="commentText" id="commentText" cols="200" rows="10" wrap="hard" placeholder="Here goes your message" maxlength="1000"
+                                required></textarea>
 
                             <input type="submit" value="Send Messenger">
                         </form>
@@ -369,13 +374,16 @@
                     </ul>
                 </nav>
 
-                <form action="" class="emailForm">
+                <form action="sendEmail.php" class="emailForm">
                     <label for="emailForm" class="emailFormLabel">sign up for get our newsletter</label>
                     <input type="email" class="emailFormInput" id="emailForm" name="emailForm" placeholder="Your email...">
-                    <!-- <input type="submit" value="" class="emailFormSubmit"> -->
-                    <a href="#">
+
+                    <button type="submit" class="emailFormSubmit">
                         <i class="far fa-paper-plane"></i>
-                    </a>
+                    </button>
+                    <!-- <a href="#">
+                        <i class="far fa-paper-plane"></i>
+                    </a> -->
                 </form>
             </section>
             <!-- ==Footer Top ENDS== -->
