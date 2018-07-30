@@ -707,7 +707,7 @@ h6.blogCategories {
 
 .blogMainSecondaryWrapper {
     background-color: rgb(255, 255, 255);
-    padding: 0 50px;
+    padding: 0 50px 60px 50px;
     position: relative;
     bottom: 80px;
 }
@@ -982,26 +982,11 @@ h6.blogCategories {
 }
 
 .commentsHistoryTextContainer::after {
-    /* content: ''; 
-    position: absolute; 
-    left: 0; 
-    top: 30%; 
-    width: 0; 
-    height: 0; 
-    border: 20px solid transparent; 
-    border-top-color: transparent;
-    border-right-color: rgb(246, 246, 246);
-    border-top: 0;
-    border-left: 0;
-    margin-top: -30px; 
-    margin-left: -20px; */
     content:"";
     position: absolute;
-    border-style:solid;
-    border-color:rgb(246, 246, 246) transparent;
+    border-style: solid;
     top: 13px;
     left: -15px;
-    bottom: auto;
     border-width: 5px 15px 5px 0;
     border-color:transparent rgb(246, 246, 246);
 }
@@ -1036,17 +1021,87 @@ h6.blogCategories {
 }
 /* ==Comments History Section ENDS== */
 
-textarea {
+/* ==Comment Submit Section== */
+
+.commentSubmitHeaderContainer h5 {
+    margin: 0;
+    border-bottom: 0.42px solid rgba(0, 0, 0, 0.15);
+    padding-bottom: 22px;
+}
+
+.commentSubmitForm {
+    margin-top: 50px;
+}
+
+.siteSubmitForm input[type="text"],
+.siteSubmitForm input[type="email"],
+.siteSubmitForm textarea {
+    border: none;
+    border-bottom: 0.42px solid rgba(0, 0, 0, 0.15);
+    padding-bottom: 10px;
+    color: rgb(153, 153, 153);
+}
+
+.siteSubmitForm input[type="text"]:hover,
+.siteSubmitForm input[type="email"]:hover,
+.siteSubmitForm textarea:hover {
+    color: rgb(0, 0, 0);
+    border-bottom: 0.42px solid rgba(0, 0, 0)
+}
+
+.siteSubmitForm input[type="text"]:focus,
+.siteSubmitForm input[type="email"]:focus,
+.siteSubmitForm textarea:focus {
+    color: rgb(0, 0, 0);
+    border-bottom: 0.42px solid rgba(0, 0, 0)
+}
+
+.userInfo input {
+    width: calc(33% - 25px);
+    margin-right: 25px;
+}
+
+.siteSubmitForm textarea {
     resize: none;
     width: 100%;
+    margin-top: 40px;
 }
+
+.siteSubmitForm input[type="submit"] {
+    margin-top: 50px;
+    background-color: rgb(132, 160, 22);
+    border: none;
+    border-radius: 2px;
+    color: rgb(255, 255, 255);
+    padding: 22px 34px 14px 34px;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+.siteSubmitForm input[type="submit"]:hover {
+    background-color: rgba(132, 160, 22, 0.8);  
+}
+
+.siteSubmitForm input[type="submit"]:active {
+    background-color: rgba(132, 160, 22, 0.8);  
+    position: relative;
+    top: 2px;
+    /* left: 1px; */
+}
+/* ==Comment Submit Section ENDS== */
+
 /* BLOG MAIN ENDS */
 /* ======================== */
 
+/* ======================== */
+/* CONTACT MAIN */
 
+/* CONTACT MAIN ENDS */
+/* ======================== */
 
 /* ======================== */
-/* FOOTER STARTS */
+/* CONTACT FOOTER */
 
-/* FOOTER ENDS */
+/* CONTACT FOOTER ENDS */
 /* ======================== */
