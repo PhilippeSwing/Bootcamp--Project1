@@ -53,7 +53,7 @@ h5 {
 }
 
 h6 {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 600;
     color: rgb(153, 153, 153);
     text-transform: uppercase;
@@ -685,9 +685,12 @@ footer li {
 /* BLOG MAIN */
 
 /* ==Blog General Styles== */
+.wrapperSecondary {
+    max-width: 1270px;
+}
+
 h6.blogCategories {
     font-family: 'Playfair Display', serif;
-    font-size: 1.4rem;
     font-weight: 700;
     color: rgb(0, 0, 0);
     text-transform: capitalize;
@@ -870,6 +873,76 @@ h6.blogCategories {
 
 .relatedPostsHeaderContainer h5 {
     margin: 100px 0 22px 0;
+}
+
+.postsContainer {
+    margin-top: 50px;
+}
+
+.post {
+    float: left;
+    width: calc(33.3% - (60px / 3));
+    margin-right: 30px;
+    box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.05);
+}
+
+.post:hover {
+    box-shadow: 0px 20px 30px -15px rgba(0, 0, 0, 0.35);
+}
+
+.post:hover h6 {
+    text-decoration: underline;
+    text-decoration-color: rgb(153, 153, 153);
+}
+
+.post:hover a {
+    color: rgb(0, 0, 0);
+}
+
+.post:hover a i {
+    color: rgb(0, 0, 0);
+}
+
+.post3Container {
+    margin-right: 0;
+}
+
+.post3Container h6 {
+    padding: 0 62px 0 0;
+}
+
+.postImageContainer img {
+    display: block;
+    width: 100%;
+}
+
+.postTextContainer {
+    padding: 20px 25px 25px 25px;
+}
+
+.postTextContainer p {
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+.postTextContainer h6 {
+    margin-top: 15px;
+    line-height: 20px;
+    text-transform: none;
+}
+
+.postTextContainer a {
+    text-decoration: none;
+    color: rgb(153, 153, 153);
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.postTextContainer a i {
+    color: rgb(205, 205, 205);
+    margin-left: 3px;
 }
 
 /* ==Related Posts Section ENDS== */
