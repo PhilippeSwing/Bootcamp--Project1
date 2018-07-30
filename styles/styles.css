@@ -773,7 +773,7 @@ h6.blogCategories {
 
 .blogAuthorImageContainer {
     float: left;
-    /* width: 15% */
+    width: 6%
 }
 
 .blogAuthorImageContainer img {
@@ -784,7 +784,7 @@ h6.blogCategories {
 
 .blogAuthorInformationList {
     float: left;
-    width: 90%;
+    width: 94%;
     padding-left: 30px;
 }
 
@@ -944,8 +944,97 @@ h6.blogCategories {
     color: rgb(205, 205, 205);
     margin-left: 3px;
 }
-
 /* ==Related Posts Section ENDS== */
+
+/* ==Comments History Section== */
+.commentsHistory {
+    margin-top: 100px;
+}
+
+.commentsHistoryHeaderContainer h5 {
+    margin: 0;
+    border-bottom: 0.42px solid rgba(0, 0, 0, 0.15);
+    padding-bottom: 22px;
+}
+
+.commentContainer1 {
+    margin-top: 50px;
+}
+
+.commentsHistoryImageContainer {
+    /* display: inline-block; */
+    float: left;
+    width: 6%;
+}
+
+.commentsHistoryImageContainer img {
+    display: block;
+    width: 100%;
+}
+
+.commentsHistoryTextContainer {
+    float: left;
+    width: calc(94% - 30px);
+    background-color: rgb(246, 246, 246);
+    padding: 15px 0 30px 20px;
+    margin: 0 0 25px 30px;
+    position: relative;
+}
+
+.commentsHistoryTextContainer::after {
+    /* content: ''; 
+    position: absolute; 
+    left: 0; 
+    top: 30%; 
+    width: 0; 
+    height: 0; 
+    border: 20px solid transparent; 
+    border-top-color: transparent;
+    border-right-color: rgb(246, 246, 246);
+    border-top: 0;
+    border-left: 0;
+    margin-top: -30px; 
+    margin-left: -20px; */
+    content:"";
+    position: absolute;
+    border-style:solid;
+    border-color:rgb(246, 246, 246) transparent;
+    top: 13px;
+    left: -15px;
+    bottom: auto;
+    border-width: 5px 15px 5px 0;
+    border-color:transparent rgb(246, 246, 246);
+}
+
+.commentName {
+    margin: 0;
+    color: rgb(1, 0, 0);
+}
+
+.commentName a {
+    text-decoration: none;
+    font-style: italic;
+    color: rgb(51, 204, 204);
+    font-size: 1.3rem;
+}
+
+.commentName span {
+    font-size: 1.2rem;
+    color: rgb(51, 51, 51);
+}
+
+.commentText {
+    margin: 12px 0 0 0;
+    color: rgb(102, 102, 102);
+    font-size: 1.3rem;
+}
+
+.postDate {
+    margin: 15px 0 0 0;
+    font-size: 1rem;
+
+}
+/* ==Comments History Section ENDS== */
 
 textarea {
     resize: none;
