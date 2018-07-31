@@ -560,7 +560,31 @@ footer li {
     font-size: 2.4rem;
     line-height: 3.6rem;
     margin: 0;
+    /* position: relative; */
 }
+/* 
+.testimonialsContainer blockquote p {
+    font-size: 1rem;
+    font-style: italic;
+    position: absolute;
+    color: rgb(51, 51, 51);
+}
+
+.testimonialsContainer blockquote p:first-child {
+    top: 0;
+    left: 0;
+}
+
+.testimonialsContainer blockquote p:last-child {
+    bottom: 0;
+    right: 0;
+} */
+    /* position: absolute;
+} */
+
+/* .testimonialsContainer blockquote::before {
+    content: "\f10e";
+} */
 
 .starsRatingContainer {
     margin: 30px 0 40px 0;
