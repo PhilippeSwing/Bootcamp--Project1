@@ -12,6 +12,7 @@
 </head>
 
 <body>
+    <a href="#maincontent" class="skip-link">Skip to main content.</a>
     <!-- HEADER STARTS -->
     <header class="headerMain">
         <section class="headerNavContainer wrapperPrimary">
@@ -45,15 +46,18 @@
 
                     <nav class="headerActionLinks">
                         <ul>
-                            <li>
+                            <li class="searchLink">
                                 <a href="#">
                                     <i title="Search our website" class="fas fa-search"></i>
                                 </a>
                             </li>
-                            <li>
+
+                            <li class="shoppingLink">
                                 <a href="#">
                                     <i title="Go to our booking page" class="fas fa-shopping-bag"></i>
                                 </a>
+
+                                <p>2</p>
                             </li>
                         </ul>
                     </nav>
@@ -76,7 +80,7 @@
                 <div class="wrapperSecondary">
                     <div class="aboutUsDirectorContainer">
                         <header class="sectionHeader aboutUsHeader">
-                            <h6 class="aboutUsHeader">A little about us</h6>
+                            <h6 class="aboutUsHeader" id="maincontent">A little about us</h6>
                         </header>
 
                         <article class="aboutUsMainContainer clearfix">
@@ -161,7 +165,7 @@
             <section class="testimonials wrapperPrimary">
                 <div class="testimonialsContainer wrapperSecondary">
                     <a href="#" class="testimonialsScrollArrow">
-                        <i class="fas fa-angle-left"></i>
+                        <i class="fas fa-angle-left" title="Scroll left to the next testimonial"></i>
                     </a>
 
                     <header class="sectionHeader">
@@ -175,11 +179,11 @@
                         expedition design organized."</blockquote>
 
                     <div class="starsRatingContainer">
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
+                        <i class="far fa-star" aria-hidden="true"></i>
+                        <i class="far fa-star" aria-hidden="true"></i>
+                        <i class="far fa-star" aria-hidden="true"></i>
+                        <i class="far fa-star" aria-hidden="true"></i>
+                        <i class="far fa-star" aria-hidden="true"></i>
                     </div>
 
                     <p class="aboutUsResortDirector quoteUser">
@@ -189,7 +193,7 @@
                     </p>
 
                     <a href="#" class="testimonialsScrollArrow">
-                        <i class="fas fa-angle-right"></i>
+                        <i class="fas fa-angle-right" title="Scroll right to the next testimonial."></i>
                     </a>
                 </div>
             </section>
@@ -212,16 +216,16 @@
                             <img src="./assets/home-5.jpeg" alt="Topographical view of a woman floating on a blue translucent body of water, wearing a bikini.">
                         </div>
                         <div class="galleryImageContainer image3">
-                            <img src="./assets/home-6.jpeg" alt="">
+                            <img src="./assets/home-6.jpeg" alt="Close-up side view of a high wave. Great for surfing.">
                         </div>
                         <div class="galleryImageContainer image4">
-                            <img src="./assets/home-7.jpeg" alt="">
+                            <img src="./assets/home-7.jpeg" alt="A large oceanside deck, lined with long chairs and decorated with a couple palm trees.">
                         </div>
                         <div class="galleryImageContainer image5">
-                            <img src="./assets/home-8.jpeg" alt="">
+                            <img src="./assets/home-8.jpeg" alt="Topographical view of open luggage, filled with clothing a camera, a few toiletries and a beige hat.">
                         </div>
                         <div class="galleryImageContainer image6">
-                            <img src="./assets/home-9.jpeg" alt="">
+                            <img src="./assets/home-9.jpeg" alt="A person standing on a rock in front of a tall and narrow waterfall.">
                         </div>
                     </div>
                 </div>
@@ -271,7 +275,7 @@
     <!-- ======================== -->
     <!-- FOOTER STARTS-->
     <footer>
-        <div class="wrapperPrimary">
+        <div class="footerMain wrapperPrimary">
             <!-- ==Footer Top== -->
             <section class="footerTop wrapperSecondary clearfix">
                 <nav class="footerTopLinks1 footerTopLinks clearfix">
@@ -316,7 +320,7 @@
                     <input type="email" class="emailFormInput" id="emailForm" name="emailForm" placeholder="Your email...">
 
                     <button type="submit" class="emailFormSubmit">
-                        <i class="far fa-paper-plane"></i>
+                        <i class="far fa-paper-plane" aria-hidden="true"></i>
                     </button>
                     <!-- <a href="#">
                                 <i class="far fa-paper-plane"></i>

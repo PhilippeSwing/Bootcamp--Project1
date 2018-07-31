@@ -175,17 +175,33 @@ p {
     display: inline-block;
     font-size: 2rem;
 }
+
+.shoppingLink {
+    position: relative;
+}
+
+.shoppingLink p {
+    font-size: 1rem;
+    background-color: rgb(164, 241, 220);
+    border-radius: 50%;
+    position: absolute;
+    top: 4px;
+    right: -10px;
+    color: rgb(0, 0, 1);
+    padding: 2px 5px;
+}
 /* ==Site Top Header Ends== */
 
 /* ==Site Header Hero== */
-.siteHero {
+.siteHero,
+.contactFooterHero {
     background: rgba(126, 229, 208) center no-repeat;
 }
 /* ==Site Header Hero ENDS== */
 
 /* ==Site Footer== */
 /* ====Footer Top==== */
-footer .wrapperPrimary {
+.footerMain {
     background-color: rgb(33, 32, 32);
     color: rgb(153, 153, 153);
     padding-top: 80px;
@@ -307,7 +323,7 @@ footer li {
     margin-left: 50px;
 }
 
-.footerSocialNav i {
+.footerSocialNav a:hover i {
     color: rgb(255, 255, 255);
 }
 /* ====Footer Bottom ENDS==== */
@@ -440,14 +456,14 @@ footer li {
 
 .aboutUsFeatures .wrapperThird {
     float: right;
-    margin-left: 19.5%;
+    /* margin-left: 19.5%; */
     /* margin-left: calc((1920px - 1170px) / 2); */
     /* display: inline-block; */
     /* text-align: right; */
 }
 
 .featuresTextContainer {
-    width: calc(55% - 50px);
+    width: calc(60% - 50px);
     margin-right: 50px;
     /* width: 55%; */
     float: left;
@@ -469,7 +485,7 @@ footer li {
 .featureContainer {
     padding: 0 75px 0 60px;
     margin-bottom: 40px;
-    width: 49%;
+    width: 50%;
     float: left;
     position: relative;
 }
@@ -506,7 +522,7 @@ footer li {
 
 .featuresImageSection {
     float: left;
-    width: 45%;
+    width: 40%;
     /* border: 1px solid blue; */
 }
 
@@ -734,6 +750,7 @@ h6.blogCategories,
 /* ==Blog Main Section Wrappers== */
 .blogMainPrimaryWrapper {
     background-color: rgb(238, 238, 238);
+    padding-bottom: 70px;
 }
 
 .blogMainSecondaryWrapper {
@@ -1194,10 +1211,22 @@ h6.blogCategories,
 
 .contactSubmitForm {
     margin-top: 125px;
+    padding-bottom: 100px;
 }
 
 .contactSubmitForm input[type="submit"] {
-    
+    background-color: transparent;
+    color: rgb(153, 153, 153);
+    border-radius: 0;
+    border-bottom: 1px solid rgb(153, 153, 153);
+    padding: 22px 0 14px 0;
+    font-weight: 600;
+}
+
+.contactSubmitForm input[type="submit"]:hover {
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    border-bottom: 1px solid rgb(0, 0, 0);
 }
 /* ==Contact Form Section== */
 /* CONTACT MAIN ENDS */
@@ -1205,6 +1234,9 @@ h6.blogCategories,
 
 /* ======================== */
 /* CONTACT FOOTER */
-
+.contactFooterHero {
+    background-image: url('../assets/contact-2.jpeg');
+    min-height: 688px;
+}
 /* CONTACT FOOTER ENDS */
 /* ======================== */

@@ -13,6 +13,8 @@
 </head>
 
 <body>
+    <a href="#maincontent" class="skip-link">Skip to main content.</a>
+    <!-- HEADER STARTS -->
     <header class="headerMain">
         <section class="headerNavContainer wrapperPrimary">
             <div class="wrapperSecondary clearfix">
@@ -45,15 +47,18 @@
 
                     <nav class="headerActionLinks">
                         <ul>
-                            <li>
+                            <li class="searchLink">
                                 <a href="#">
                                     <i title="Search our website" class="fas fa-search"></i>
                                 </a>
                             </li>
-                            <li>
+
+                            <li class="shoppingLink">
                                 <a href="#">
                                     <i title="Go to our booking page" class="fas fa-shopping-bag"></i>
                                 </a>
+
+                                <p>2</p>
                             </li>
                         </ul>
                     </nav>
@@ -72,7 +77,7 @@
         <!-- ==Contact Details Section== -->
         <section class="contactDetails wrapperPrimary">
             <div class="wrapperSecondary">
-                <h3 class="contactHeader">Contact details</h3>
+                <h3 class="contactHeader" id="maincontent">Contact details</h3>
 
                 <div class="contactDetailsDescriptionContainer">
                     <p class="contactDetailsDescription">Design cute expedition, excursion fun modern website clean website traveling travelblogger traveling
@@ -81,18 +86,18 @@
 
                 <div class="contactOptionsContainer clearfix">
                     <div class="contactOption option1">
-                        <i class="fas fa-mobile-alt"></i>
+                        <i class="fas fa-mobile-alt" aria-hidden="true"></i>
                         <h6>Phone</h6>
                         <p>Phone 01: (0091) 8547 632521</p>
                         <p>Phone 02: (084) 965 4788</p>
                     </div>
                     <div class="contactOption option2">
-                        <i class="fas fa-map-marker-alt"></i>
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
                         <h6>Address</h6>
                         <p>123 King Str, 4th Floor, Utral Hosue Building, Honolulu, Hawaii.</p>
                     </div>
                     <div class="contactOption option3">
-                        <i class="fas fa-envelope"></i>
+                        <i class="fas fa-envelope" aria-hidden="true"></i>
                         <h6>Email</h6>
                         <p>support@sunshine.com</p>
                         <p>hello@sunshine.com</p>
@@ -136,9 +141,9 @@
     <!-- FOOTER STARTS-->
     <footer>
 
-        <div class="footerHero wrapperPrimary"></div>
+        <div class="contactFooterHero wrapperPrimary"></div>
 
-        <div class="wrapperPrimary">
+        <div class="footerMain wrapperPrimary">
             <!-- ==Footer Top== -->
             <section class="footerTop wrapperSecondary clearfix">
                 <nav class="footerTopLinks1 footerTopLinks clearfix">
@@ -183,7 +188,7 @@
                     <input type="email" class="emailFormInput" id="emailForm" name="emailForm" placeholder="Your email...">
 
                     <button type="submit" class="emailFormSubmit">
-                        <i class="far fa-paper-plane"></i>
+                        <i class="far fa-paper-plane" aria-hidden="true"></i>
                     </button>
                     <!-- <a href="#">
                                 <i class="far fa-paper-plane"></i>
